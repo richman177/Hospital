@@ -41,7 +41,7 @@ urlpatterns = i18n_patterns(
     path('docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('accounts/', include('allauth.urls')),
     path('auth/', include('dj_rest_auth.urls')),
-    path('', include('dj_rest_auth.registration.urls')),
+    path('elmirbek/', include('dj_rest_auth.registration.urls')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

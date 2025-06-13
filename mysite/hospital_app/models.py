@@ -132,4 +132,4 @@ class Ward(models.Model):
     current_people = models.PositiveSmallIntegerField(validators=[MaxValueValidator(20)])
 
     def __str__(self):
-        return f'{self.type_ward}'
+        return f'{self.type_ward}'     

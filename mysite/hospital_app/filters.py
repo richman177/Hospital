@@ -14,7 +14,7 @@ class SpecialtyFilter(FilterSet):
     class Meta:
         model = Specialty
         fields = {
-            'specialty_name': ['exact'],
+            'specialty_name': ['exact'],    
         }
 
 

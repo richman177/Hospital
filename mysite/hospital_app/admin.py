@@ -5,7 +5,7 @@ from .models import Specialty, MedicalRecord
 from modeltranslation.admin import TranslationAdmin
 
 
-@admin.register(Specialty, MedicalRecord)
+@admin.register(Specialty, MedicalRecord)     
 class AllAdmin(TranslationAdmin):
     class Media:
         js = (

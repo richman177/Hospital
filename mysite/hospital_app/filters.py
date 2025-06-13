@@ -24,4 +24,4 @@ class DoctorFilter(FilterSet):
         fields = {
             'service_price': ['gt', 'lt'],
             'work_day': ['exact']
-        }
+        }    
